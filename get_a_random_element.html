@@ -1,0 +1,26 @@
+<html>
+
+<body>
+
+    <script>
+        // Program to get a random item from an array
+
+        function getARandomItem(arr) {
+
+            
+            let randomIndex = Math.floor(Math.random() * arr.length);
+
+            
+            let item = arr[randomIndex];
+
+            return item;
+        }
+
+        let array = [1, 'Meenu', 5, 8,"Pradeep","Reshma","Sneha"];
+
+        let result = getARandomItem(array);
+        document.write(result);
+    </script>
+</body>
+
+</html>

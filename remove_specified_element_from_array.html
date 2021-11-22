@@ -1,0 +1,44 @@
+<html>
+
+<body>
+    <script>
+        //Remove specified element from the list
+       let array = [1, "2", 12, "Meenu", "Pradeep", "13", "Reshma"];
+        alert("Refresh the page after entering null values ,Check the existing array elements and their datatypes in the console");
+        console.log(`The existing array is : `,array);
+        let element = prompt("Enter an element to be removed :");
+        let type = prompt("Enter the datatype of an element you want to remove: (either number or string)");
+        let index;
+        
+        function check(element1) {
+            if (type === "string") {
+                answer = array.includes(element1);
+            }
+            else if (type === "number") {
+                answer = array.includes(parseInt(element1));
+            }
+        };
+        check(element);
+        if (answer) {
+             
+            if (type === "string") {
+                index=array.indexOf(element);
+                array.splice(index,1);
+                console.log(`The array after removing specified element is:`,array);
+            }
+            else if (type === "number") {
+                index=array.indexOf(parseInt(element));
+                array.splice(index,1);
+                console.log(`The array after removing specified element is:`,array);
+            };
+        
+        }
+        else {
+            console.log("Enter the value that is present in the existing array");
+        };
+
+        
+    </script>
+</body>
+
+</html>
