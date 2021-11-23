@@ -13,10 +13,10 @@
             let name2 = y.name;
 
             if (name1 > name2) {
-                return (-1);
+                return (1);
             }
             else if (name1 < name2) {
-                return (1);
+                return (-1);
             }
             else if (name1 == name2) {
                 return (0);
@@ -24,7 +24,7 @@
         }
        
 
-        let students = [{ name: 'Meenu', roll_no: 12 }, { name: 'Sneha', roll_no: 17 }, { name: 'Pradeepa', age: 21 }, { name: 'Pradeep', age: 19 }];
+        let students = [{ name: 'Meenu', roll_no: 12 }, { name: 'Sneha', roll_no: 17 }, { name: 'Pradeepa', roll_no: 21 }, { name: 'Pradeep', roll_no: 19 }];
 
         console.log(students.sort(sortbyName_ascendingorder));
         

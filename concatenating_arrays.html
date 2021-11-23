@@ -4,11 +4,13 @@
     
     <script>
         //Merge two arrays
-        let array1=[1,12,"Meenu","Pradeep",12,1,"meenu"]
-        let array2=[15,17];
-        const mergedArray=array1.concat(array2);
-        console.log(mergedArray);
+        let array1=[1,12,"Meenu","Pradeep",12,1,"meenu"];
+        let array2=[15,17,"Meenu","Pradeep"];
         
+        let merge = array1.concat(array2);
+        
+        let removeduplicatesarray=new Set(merge);
+        console.log(removeduplicatesarray);
        
         
 
