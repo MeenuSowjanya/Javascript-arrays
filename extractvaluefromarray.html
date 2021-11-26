@@ -3,19 +3,19 @@
 <body>
 
     <script>
-        // program to extract value as an array from an array of objects
+        // program to extract value as an array from an array of objects by properties
 
         function extract(arr, property) {
 
             let extractedValues = [];
-
-            for (let i = 0; i < arr.length; i++) {
+            
+            for ( i = 0; i < arr.length; i++) {
                 extractedValues.push(arr[i][property]);
             }
             return extractedValues;
-        }
+        };
 
-        let students = [{ name: 'Meenu', roll_no: 12 }, { name: 'Sneha', roll_no: 17 }, { name: 'Pradeepa', age: 21 }, { name: 'Pradeep', age: 19 }];
+        let students = [{ name: 'Meenu', roll_no: 12 }, { name: 'Sneha', roll_no: 17 }, { name: 'Pradeepa', roll_no: 21 }, { name: 'Pradeep', roll_no: 19 }];
 
 
         let answer = extract(students, 'name');
