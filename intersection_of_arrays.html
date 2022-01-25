@@ -1,38 +1,22 @@
 <html>
-
-<body>
-
+  <body>
     <script>
-        // Program to perform intersection between two arrays using Set
-        
-
-        function Intersect(arr1, arr2) {
-
-            
-            const set1 = new Set(arr1);
-            const set2 = new Set(arr2);
-
-            let answer = [];
-
-            for (let i of set2) {
-
-                if (set1.has(i)) {
-                    answer.push(i);
-                }
-
-            }
-
-            return answer;
-
+      // Program to perform intersection between two arrays using Set
+      function Intersect(arr1, arr2) {
+        const set1 = new Set(arr1);
+        const set2 = new Set(arr2);
+        let answer = [];
+        for (let i of set2) {
+          if (set1.has(i)) {
+            answer.push(i);
+          }
         }
-
-        const array1 = ["Meenu","is","a","beautiful","girl"];
-        const array2 = ["Meenu","is","a","and","brilliant","girl"];
-
-        const result = Intersect(array1, array2);
-        console.log(result);
-
+        return answer;
+      }
+      const array1 = ["She", "is", "a", "beautiful", "girl"];
+      const array2 = ["She", "is", "a", "and", "brilliant", "girl"];
+      const result = Intersect(array1, array2);
+      console.log(result);
     </script>
-</body>
-
+  </body>
 </html>

@@ -1,32 +1,30 @@
 <html>
-
-<body>
-
+  <body>
     <script>
-        //Indicate whether the specified element is in array or not
-
-        let array = [1, "2", 12, "Meenu", "Pradeep", "13", "Reshma"];
-        
-        
-        let element = prompt("Enter an element to be checked");
-        let type = prompt("Enter the datatype of an element you want ot check : (either number or string)")
-        let answer;
-        function check(element1) {
-            if (type === "string") {
-                answer = array.includes(element1);
-            }
-            else if (type === "number") {
-                answer = array.includes(parseInt(element1));
-            }
-        };
-        check(element);
-        if (answer) {
-            document.write(`Given element ${element} is present in the existing array`)
+      //Indicate whether the specified element is in array or not
+      let array = [1, "2", 12, "Meenu", "13", "Reshma"];
+      let element = prompt("Enter an element to be checked");
+      let type = prompt(
+        "Enter the datatype of an element you want ot check : (either number or string)"
+      );
+      let answer;
+      function check(element1) {
+        if (type === "string") {
+          answer = array.includes(element1);
+        } else if (type === "number") {
+          answer = array.includes(parseInt(element1));
         }
-        else {
-            document.write(`Given element ${element} is not present in the existing array`)
-        };
+      }
+      check(element);
+      if (answer) {
+        document.write(
+          `Given element ${element} is present in the existing array`
+        );
+      } else {
+        document.write(
+          `Given element ${element} is not present in the existing array`
+        );
+      }
     </script>
-</body>
-
+  </body>
 </html>

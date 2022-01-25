@@ -1,26 +1,22 @@
 <html>
-
-<body>
-
+  <body>
     <script>
-        // program to extract value as an array from an array of objects by properties
-
-        function extract(arr, property) {
-
-            let extractedValues = [];
-            
-            for ( i = 0; i < arr.length; i++) {
-                extractedValues.push(arr[i][property]);
-            }
-            return extractedValues;
-        };
-
-        let students = [{ name: 'Meenu', roll_no: 12 }, { name: 'Sneha', roll_no: 17 }, { name: 'Pradeepa', roll_no: 21 }, { name: 'Pradeep', roll_no: 19 }];
-
-
-        let answer = extract(students, 'name');
-        document.write(answer);
+      // program to extract value as an array from an array of objects by properties
+      function extract(arr, property) {
+        let extractedValues = [];
+        for (i = 0; i < arr.length; i++) {
+          extractedValues.push(arr[i][property]);
+        }
+        return extractedValues;
+      }
+      let students = [
+        { name: "Meenu", roll_no: 12 },
+        { name: "SYM", roll_no: 17 },
+        { name: "GYM", roll_no: 21 },
+        { name: "PYM", roll_no: 19 },
+      ];
+      let answer = extract(students, "name");
+      document.write(answer);
     </script>
-</body>
-
+  </body>
 </html>

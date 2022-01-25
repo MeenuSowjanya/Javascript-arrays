@@ -1,35 +1,25 @@
 <html>
-
-<body>
-
+  <body>
     <script>
-
-        // Program to sort array by property Name
-
-        function sortbyName_ascendingorder(x, y) {
-
-
-            let name1 = x.name;
-            let name2 = y.name;
-
-            if (name1 > name2) {
-                return (1);
-            }
-            else if (name1 < name2) {
-                return (-1);
-            }
-            else if (name1 == name2) {
-                return (0);
-            };
+      // Program to sort array by property Name
+      function sortbyName_ascendingorder(x, y) {
+        let name1 = x.name;
+        let name2 = y.name;
+        if (name1 > name2) {
+          return 1;
+        } else if (name1 < name2) {
+          return -1;
+        } else if (name1 == name2) {
+          return 0;
         }
-
-
-        let students = [{ name: 'Meenu', roll_no: 12 }, { name: 'Sneha', roll_no: 17 }, { name: 'Pradeer', roll_no: 21 }, { name: 'Pradeep', roll_no: 19 }];
-
-        console.log(students.sort(sortbyName_ascendingorder));
-
-
+      }
+      let students = [
+        { name: "Meenu", roll_no: 12 },
+        { name: "Sss", roll_no: 17 },
+        { name: "XXX", roll_no: 21 },
+        { name: "CCC", roll_no: 19 },
+      ];
+      console.log(students.sort(sortbyName_ascendingorder));
     </script>
-</body>
-
+  </body>
 </html>

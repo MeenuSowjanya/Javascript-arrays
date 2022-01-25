@@ -1,49 +1,29 @@
 <html>
-
-<body>
-
+  <body>
     <script>
-        
-        function compareElementsOfTwoArrays(arr1, arr2) {
-
-            
-            if (arr1.length != arr2.length) {
-                return false;
+      function compareElementsOfTwoArrays(arr1, arr2) {
+        if (arr1.length != arr2.length) {
+          return false;
+        } else {
+          let answer;
+          for (let i = 0; i < arr2.length; i++) {
+            if (arr1[i] != arr2[i]) {
+              answer = false;
+            } else {
+              answer = true;
             }
-            else {
-                let answer;
-
-                
-                for (let i = 0; i < arr2.length; i++) {
-
-                    if (arr1[i] != arr2[i]) {
-                        answer= false;
-                    }
-                    else {
-                        answer = true;
-                    }
-
-                }
-                return answer;
-
-            }
-
+          }
+          return answer;
         }
-
-        let array1 = [1, 3, 5, 8];
-        let array2 = [1, 3, 5, 8];
-       
-        let result= compareElementsOfTwoArrays(array1, array2);
-        
-        
-        if (result) {
-            console.log('The arrays have the same elements.');
-        }
-        else {
-            console.log('The arrays have different elements.');
-        }
-
+      }
+      let array1 = [1, 3, 5, 8];
+      let array2 = [1, 3, 5, 8];
+      let result = compareElementsOfTwoArrays(array1, array2);
+      if (result) {
+        console.log("The arrays have the same elements.");
+      } else {
+        console.log("The arrays have different elements.");
+      }
     </script>
-</body>
-
+  </body>
 </html>

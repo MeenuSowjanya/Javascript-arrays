@@ -4,20 +4,16 @@
 
     <script>
         // Program to split array into smaller chunks
-
         function split(arr, chunk) {
-
             while (arr.length > 0) {
-
-                let temp;
-                temp = arr.splice(0, chunk);
+            let temp;
+            temp = arr.splice(0, chunk);
                 document.write("<br>")
                 document.write("<br>")
                 document.write(temp);
             }
         }
-
-        let array = [1, 2, 3, 4, 5, 6, 7, 8,9,10,11,12,13,14,15,16,17,18,9,20,"Meenu","is","a good","girl"];
+        let array = [1, 2, 3, 4, 5, 6, 7, 8,9,10,11,12,13,14,15,16,17,18,9,20,"She","is","a good","girl"];
         let chunks = 7;
         split(array, chunks);
         
